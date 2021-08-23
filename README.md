@@ -1,7 +1,7 @@
 # Movies App
 # Sobre o projeto
 
-### Visite o site : https://gsmoviesapp.netlify.app/
+### Site : https://gsmoviesapp.netlify.app/
 
 Projeto realizado durante o processo seletivo de estágio para a empresa <a href="https://appmasters.io/pt/">App Masters</a>. 
 
