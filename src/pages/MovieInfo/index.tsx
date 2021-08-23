@@ -9,8 +9,8 @@ import {
   Overview,
   MovieStyle,
   InfoStyle,
+  MovieSection,
 } from './styles';
-import { MovieSection } from './styles';
 import { toast } from 'react-toastify';
 import Loading from '../../components/Loading';
 
@@ -102,6 +102,10 @@ export const MovieInfo: React.FC = () => {
                   <p>{movie?.tagline}</p>
                 </div>
               )}
+              <div>
+                <h4>Data de lançamento:</h4>
+                <p>{movie?.release_date}</p>
+              </div>
             </Overview>
             <p>
               Nota TMDB : <span>{movie?.vote_average}</span>

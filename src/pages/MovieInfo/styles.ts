@@ -24,7 +24,6 @@ export const MovieInfoContainer = styled.div`
       font-size: 2rem;
     }
   }
-
   img {
     box-shadow: 15px 15px 15px black;
     border-radius: 0.5rem;
@@ -51,6 +50,53 @@ export const MovieStyle = styled.div`
 export const ErrorImg = styled.div`
   display: flex;
   align-items: center;
+`;
+
+export const InfoStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.3rem;
+
+  @media (max-width: 1025px) {
+    margin-top: 1.5rem;
+    margin-left: 0;
+  }
+  p {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    span {
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 0.4rem;
+      color: black;
+      border: 3px solid #1fc3ff;
+      margin-left: 0.5rem;
+      margin-bottom: 0.3rem;
+
+      min-width: 2.8rem;
+      text-align: center;
+    }
+  }
+
+  button {
+    margin-top: 0.8rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    font-size: 1.1rem;
+    & + button {
+      margin-left: 0.8rem;
+    }
+    &:hover {
+      background-color: #1fc3ff;
+    }
+  }
 `;
 
 export const Overview = styled.div`
@@ -83,59 +129,10 @@ export const Overview = styled.div`
     font-family: cursive, sans-serif;
     margin-bottom: 0.5rem;
   }
-`;
 
-export const InfoStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: 1.3rem;
-
-  @media (max-width: 1025px) {
-    margin-top: 1.5rem;
-    margin-left: 0;
-  }
-  p {
-    font-size: 1.3rem;
-    display: flex;
-    align-items: center;
-
-    span {
-      background-color: #fff;
-      border-radius: 50%;
-      padding: 0.4rem;
-      color: black;
-      border: 3px solid #1fc3ff;
-      margin-left: 0.5rem;
-      margin-bottom: 0.3rem;
-      margin-top: 0.3rem;
-      min-width: 2.8rem;
-      text-align: center;
-    }
-  }
-
-  button {
-    margin-top: 0.8rem;
-    padding: 0.5rem;
-    background-color: #fff;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-    font-size: 1.1rem;
-    & + button {
-      margin-left: 0.8rem;
-    }
-    &:hover {
-      background-color: #1fc3ff;
-    }
-  }
-`;
-
-export const StarsContainer = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  p {
-    margin-right: 0.5rem;
+  h4 {
+    font-size: 1.5rem;
+    font-family: cursive, sans-serif;
+    margin-bottom: 0.5rem;
   }
 `;
