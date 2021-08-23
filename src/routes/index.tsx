@@ -11,10 +11,10 @@ export const Routes: React.FC = () => {
   return (
     <Switch>
       <Route path="/" component={Home} exact />
-      <Route path="/filme/:id" component={MovieInfo} />
-      <Route path="/categorias" component={Categories} />
-      <Route path="/favoritos" component={Favorites} />
-      <Route path="/assistirdepois" component={WatchLater} />
+      <Route path="/filme/:id" component={MovieInfo} exact />
+      <Route path="/categorias" component={Categories} exact />
+      <Route path="/favoritos" component={Favorites} exact />
+      <Route path="/assistirdepois" component={WatchLater} exact />
       <Route path="*" component={NotFound} />
     </Switch>
   );
